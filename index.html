@@ -1,0 +1,89 @@
+<!-- AUG 9, 2022 - By: Josue R Bosque Pomales -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Registration Form</title>
+	    <link rel="stylesheet" href="css/styles.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="form-header">The Code Review</h1>
+        </header>
+        <div id="container">
+            <form>
+                <div class="heading">
+                    <h2>Signup for our newsletter</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox</p>
+                </div>
+                    <hr class="double">
+                    <hr class="single">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="item">
+                        <label for="full-name">Full Name</label> 
+                        <input class="contact required" type="text" id="full-name" placeholder="Required" required>
+                    </div>
+                    <div class="item">
+                        <label for="email">Email Address</label> 
+                        <input class="contact required" type="email" id="email" placeholder="Required" required>
+                    </div>
+                    <div class="item">
+                        <label for="tel">Phone Number</label> 
+                        <input class="contact" type="tel" id="tel" placeholder="(123)456-7890">
+                    </div>
+                    <div class="item">
+                        <label for="address">Street Address</label> 
+                        <input class="contact" type="text" id="address" placeholder="Number & Street">
+                    </div>
+                    <div class="item">
+                        <label for="city">City</label> 
+                        <input class="contact" type="text" id="city" placeholder="City">
+                    </div>
+                    <div class="item">
+                        <label for="state">State</label> 
+                        <select class="contact gray" name="state" id="state">
+                            <option selected hidden>Choose State</option>
+                            <optgroup class="black" label="US States">
+                                <option class="black" value="CA">CA</option>
+                                <option class="black" value="FL">FL</option>
+                                <option class="black" value="NY">NY</option>
+                                <option class="black" value="OR">OR</option>
+                                <option class="black" value="TX">TX</option>
+                            </optgroup>
+                            <optgroup class="black" label="US Territories">
+                                <option class="black" value="PR">PR</option>
+                                <option class="black" value="US VI">US VI</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="zip-code">Zip Code</label> 
+                        <input class="contact" type="text" id="zip-code" placeholder="00000-0000">
+                    </div>
+                </fieldset>
+                <hr class="single">
+                <fieldset>
+                    <legend class="no-bottom-pad">Newsletter</legend>
+                    <p>Select the newsletter you would like to recieve</p>
+                        <input class="checkbox-label" type="checkbox" id="html-news"><label for="html-news">HTML News</label><br>
+                        <input class="checkbox-label" type="checkbox" id="css-news"><label for="css-news">CSS News</label><br>
+                        <input class="checkbox-label" type="checkbox" id="js-news"><label for="js-news">Javascript News</label>
+                    <p>Newsletter Format</p>
+                        <input class="checkbox-label" type="radio" name="format" id="html-format"><label for="html-format">HTML</label><br>
+                        <input class="checkbox-label" type="radio" name="format" id="plain-text-format"><label for="plain-text-format">Plain text</label>
+                    <p>Other topics you'd like to hear about</p>
+                        <textarea name="msg" id="msg" rows="6" placeholder="Tell us more! =D"></textarea>
+                        <input class="btn" type="submit" value="Sign Up">
+                </fieldset> 
+            </form>
+        </div>
+        <footer>
+            <p><small>Copyright The Code Review</small></p>
+        </footer>
+    </body>
+</html>

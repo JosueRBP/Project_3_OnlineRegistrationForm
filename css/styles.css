@@ -1,0 +1,150 @@
+/* AUG 9, 2022 - By: Josue R Bosque Pomales */
+/******* DEFAULT STYLING MODIFIER: ***********/
+* {
+    font-family: 'Roboto Slab', serif;
+}
+html {
+    width: 100%;
+}
+body, header, h1 {
+    margin: 0;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/************** GENERAL CSS: ***************/
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+.form-header { 
+    color: white;
+    background-color: #2D3945;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 26px;
+}
+h2, legend {
+    font-size: 1.2rem;
+}
+legend {
+    padding: 20px 0;
+    color: #2D3945;
+    font-weight: bold;
+}
+.no-bottom-pad {
+    padding-bottom: 0;
+}
+.heading {
+    text-align: center; 
+}
+.heading p, footer p {
+    color: grey;
+}
+/*hr Lines*/
+.double {
+    border: none;
+    height: 4px;
+    background-color: #2D3945;
+    margin-bottom: 0;
+}
+.single {
+    border: none;
+    height: 2px;
+    background-color: #2D3945;
+    margin-top: 3px;
+}
+.item {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item label, .item input {
+    flex-direction: column;
+    width: 100%;
+}
+input[type="zip"] {
+    width: calc(50% - 4px);
+    margin-bottom: 28px;
+}
+::placeholder {
+    color: rgb(165, 165, 165);
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+.gray {
+    color: rgb(165, 165, 165);
+}
+.black {
+    color: black;
+}
+.item label {
+    padding: 15px 0;
+}
+.contact, textarea {
+    background-color: #EFF0F1;
+    width: 100%;
+}
+.contact {
+    height: 42px;
+    padding-left: 15px;
+}
+textarea {
+    height: 90px;
+    margin-bottom: 20px;
+    width: calc(100% - 10px);
+}
+.contact, textarea, .btn { 
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+textarea:focus, .contact:focus {
+    outline:#3d5e80;
+  	border: 3px solid #3d5e80;
+}
+textarea:hover, .contact:hover {
+    transition: box-shadow 1s;
+    box-shadow: 3px 3px 2px #52bab3;
+}
+.checkbox-label {
+    margin: 12px 12px 12px 0;
+}
+.btn {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    background: #52bab3;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer; 
+}
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    #container {
+        max-width: 600px;
+    }
+    .item label {
+        width: 20%;
+        margin: auto 0;
+    }
+    .item input {
+        width: 75%;
+        margin: 10px 0;
+    }
+    .item select {
+        width: 473px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    input[type="zip"] {
+        width: calc(25% - 4px);
+    }
+}
