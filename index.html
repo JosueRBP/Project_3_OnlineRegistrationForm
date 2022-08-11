@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Registration Form</title>
 	    <link rel="stylesheet" href="css/styles.css">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +49,7 @@
                     <div class="item">
                         <label for="state">State</label> 
                         <select class="contact gray" name="state" id="state">
-                            <option selected hidden>Choose State</option>
+                                <option selected hidden>Choose State</option>
                             <optgroup class="black" label="US States">
                                 <option class="black" value="CA">CA</option>
                                 <option class="black" value="FL">FL</option>
@@ -66,7 +68,7 @@
                         <input class="contact" type="text" id="zip-code" placeholder="00000-0000">
                     </div>
                 </fieldset>
-                <hr class="single">
+                <hr class="single last">
                 <fieldset>
                     <legend class="no-bottom-pad">Newsletter</legend>
                     <p>Select the newsletter you would like to recieve</p>
@@ -75,8 +77,8 @@
                         <input class="checkbox-label" type="checkbox" id="js-news"><label for="js-news">Javascript News</label>
                     <p>Newsletter Format</p>
                         <input class="checkbox-label" type="radio" name="format" id="html-format"><label for="html-format">HTML</label><br>
-                        <input class="checkbox-label" type="radio" name="format" id="plain-text-format"><label for="plain-text-format">Plain text</label>
-                    <p>Other topics you'd like to hear about</p>
+                        <input class="checkbox-label" type="radio" name="format" id="plain-text-format"><label for="plain-text-format">Plain text</label><br>
+                    <label class="label-spacing" for="msg">Other topics you'd like to hear about</label>
                         <textarea name="msg" id="msg" rows="6" placeholder="Tell us more! =D"></textarea>
                         <input class="btn" type="submit" value="Sign Up">
                 </fieldset> 

@@ -66,8 +66,8 @@ legend {
     flex-direction: column;
     width: 100%;
 }
-input[type="zip"] {
-    width: calc(50% - 4px);
+input[id="zip-code"] { 
+    width: calc(50% - 4px); /*Fixed xD*/
     margin-bottom: 28px;
 }
 ::placeholder {
@@ -102,13 +102,15 @@ textarea {
     border: 3px solid transparent;
     border-radius: 5px;
 }
-textarea:focus, .contact:focus {
+textarea:focus, .contact:focus { /*Uses CSS transitions for focus states.*/
     outline:#3d5e80;
   	border: 3px solid #3d5e80;
+    transition: box-shadow 0.5s;
+    box-shadow: 4px 4px 2px #52bab3;
 }
-textarea:hover, .contact:hover {
-    transition: box-shadow 1s;
-    box-shadow: 3px 3px 2px #52bab3;
+.label-spacing {
+    margin: 16px 0 21px;
+    display: block;
 }
 .checkbox-label {
     margin: 12px 12px 12px 0;
@@ -122,7 +124,10 @@ textarea:hover, .contact:hover {
     font-size: 1em;
     cursor: pointer; 
 }
-footer {
+footer { /*Change the background color for at least ONE of the main sections of the site*/
+    margin: 2em auto 0;
+    padding: 25px 0;
+    background-color: #2D3945;
     text-align: center;
     font-style: italic;
 }
@@ -144,7 +149,10 @@ footer {
         height: 50px;
         margin: 10px 0;
     }
-    input[type="zip"] {
-        width: calc(25% - 4px);
+    input[id="zip-code"] {
+        width: calc(25% - 4px); /*Fixed xD*/
+    }
+    .last {
+        margin-top: 30px;
     }
 }
