@@ -28,23 +28,23 @@
                     <legend>Contact Information</legend>
                     <div class="item">
                         <label for="full-name">Full Name</label> 
-                        <input class="contact required" type="text" id="full-name" placeholder="Required" required>
+                        <input class="contact required" name="full_name" type="text" id="full-name" placeholder="Required" required>
                     </div>
                     <div class="item">
                         <label for="email">Email Address</label> 
-                        <input class="contact required" type="email" id="email" placeholder="Required" required>
+                        <input class="contact required" name="email" type="email" id="email" placeholder="Required" required>
                     </div>
                     <div class="item">
                         <label for="tel">Phone Number</label> 
-                        <input class="contact" type="tel" id="tel" placeholder="(123)456-7890">
+                        <input class="contact" name="phone_number" type="tel" id="tel" placeholder="(123)456-7890">
                     </div>
                     <div class="item">
                         <label for="address">Street Address</label> 
-                        <input class="contact" type="text" id="address" placeholder="Number & Street">
+                        <input class="contact" name="street_address" type="text" id="address" placeholder="Number & Street">
                     </div>
                     <div class="item">
                         <label for="city">City</label> 
-                        <input class="contact" type="text" id="city" placeholder="City">
+                        <input class="contact" name="city_address" type="text" id="city" placeholder="City">
                     </div>
                     <div class="item">
                         <label for="state">State</label> 
@@ -65,22 +65,22 @@
                     </div>
                     <div class="item">
                         <label for="zip-code">Zip Code</label> 
-                        <input class="contact" type="text" id="zip-code" placeholder="00000-0000">
+                        <input class="contact" name ="zip_code" type="text" id="zip-code" placeholder="00000-0000">
                     </div>
                 </fieldset>
                 <hr class="single last">
                 <fieldset>
                     <legend class="no-bottom-pad">Newsletter</legend>
                     <p>Select the newsletter you would like to recieve</p>
-                        <input class="checkbox-label" type="checkbox" id="html-news"><label for="html-news">HTML News</label><br>
-                        <input class="checkbox-label" type="checkbox" id="css-news"><label for="css-news">CSS News</label><br>
-                        <input class="checkbox-label" type="checkbox" id="js-news"><label for="js-news">Javascript News</label>
+                        <input class="checkbox-label" name="newsletter" type="checkbox" id="html-news"><label for="html-news">HTML News</label><br>
+                        <input class="checkbox-label" name="newsletter" type="checkbox" id="css-news"><label for="css-news">CSS News</label><br>
+                        <input class="checkbox-label" name="newsletter" type="checkbox" id="js-news"><label for="js-news">Javascript News</label>
                     <p>Newsletter Format</p>
-                        <input class="checkbox-label" type="radio" name="format" id="html-format"><label for="html-format">HTML</label><br>
-                        <input class="checkbox-label" type="radio" name="format" id="plain-text-format"><label for="plain-text-format">Plain text</label><br>
+                        <input class="checkbox-label" name="format" type="radio" id="html-format"><label for="html-format">HTML</label><br>
+                        <input class="checkbox-label" name="format" type="radio" id="plain-text-format"><label for="plain-text-format">Plain text</label><br>
                     <label class="label-spacing" for="msg">Other topics you'd like to hear about</label>
                         <textarea name="msg" id="msg" rows="6" placeholder="Tell us more! =D"></textarea>
-                        <input class="btn" type="submit" value="Sign Up">
+                        <input class="btn" name="signup_btn" type="submit" value="Sign Up">
                 </fieldset> 
             </form>
         </div>
